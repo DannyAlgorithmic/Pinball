@@ -8,6 +8,7 @@ TagManager:
   - Bumper
   - Arena Wall
   - Ball
+  - Goal
   layers:
   - Default
   - TransparentFX
@@ -17,6 +18,7 @@ TagManager:
   - UI
   - 
   - 
+  - Ball
   - 
   - 
   - 
@@ -36,10 +38,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - UI Top
+  - UI Bottom
+  - Nav Layer
   - Reference
   m_SortingLayers:
   - name: Default

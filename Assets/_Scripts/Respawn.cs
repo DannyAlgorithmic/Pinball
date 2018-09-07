@@ -16,7 +16,7 @@ public class Respawn : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D col){
-		if(col.CompareTag("Respawner")){
+		if(col.CompareTag("Goal")){
 			body.velocity = Vector2.zero;
 			body.isKinematic = true;
 			trail.emitting = false;
@@ -29,7 +29,7 @@ public class Respawn : MonoBehaviour {
 	}
 
 	private void OnTriggerExit2D(Collider2D col){
-		if(col.CompareTag("Respawner")){
+		if(col.CompareTag("Goal")){
 			StartCoroutine("ResetTrail", startTrailTime + 0.05);
 		}
 	}

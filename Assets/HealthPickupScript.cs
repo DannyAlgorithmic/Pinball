@@ -11,7 +11,7 @@ public class HealthPickupScript : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            Debug.Log("Healed by: " + Healing);
+            // Debug.Log("Healed by: " + Healing);
             gameObject.SetActive(false);
         }
     }
