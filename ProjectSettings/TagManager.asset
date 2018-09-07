@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Respawner
+  - Bumper
+  - Arena Wall
   layers:
   - Default
   - TransparentFX
