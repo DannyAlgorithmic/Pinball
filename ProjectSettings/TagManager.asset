@@ -7,6 +7,7 @@ TagManager:
   - Respawner
   - Bumper
   - Arena Wall
+  - Ball
   layers:
   - Default
   - TransparentFX
