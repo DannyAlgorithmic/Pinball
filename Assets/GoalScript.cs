@@ -6,12 +6,7 @@ using UnityEngine;
 public class GoalScript : MonoBehaviour {
 
     public Slider HealthSlider;
-    private DamageScript BallDamageScript;
-
-    private void OnEnable()
-    {
-        BallDamageScript = GameObject.FindGameObjectWithTag("Ball").GetComponent<DamageScript>();
-    }
+    public DamageScript BallDamageScript;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

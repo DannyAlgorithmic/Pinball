@@ -19,6 +19,12 @@ TagManager:
   - 
   - 
   - Ball
+  - Bumper
+  - Bumper Radius
+  - Arena
+  - Paddle
+  - View Texture
+  - Goal
   - 
   - 
   - 
@@ -31,13 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Camera
   - UI Top
   - UI Bottom
   - Nav Layer

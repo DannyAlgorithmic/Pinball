@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 4639142}
   - component: {fileID: 4639145}
   - component: {fileID: 4639146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slice1 (3)
   m_TagString: Bumper
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 165579801}
   - component: {fileID: 165579804}
   - component: {fileID: 165579803}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Top Goal
   m_TagString: Goal
   m_Icon: {fileID: 0}
@@ -476,6 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthSlider: {fileID: 1497073164}
+  BallDamageScript: {fileID: 2088018338}
 --- !u!50 &165579804
 Rigidbody2D:
   serializedVersion: 4
@@ -582,7 +583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &175229466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,7 +762,7 @@ GameObject:
   - component: {fileID: 215869098}
   - component: {fileID: 215869097}
   - component: {fileID: 215869096}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -784,7 +785,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 0}
+  m_BackGroundColor: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -803,14 +804,14 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8224
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 0
   m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -960,7 +961,7 @@ GameObject:
   - component: {fileID: 303411226}
   - component: {fileID: 303411227}
   - component: {fileID: 303411228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slice1
   m_TagString: Bumper
   m_Icon: {fileID: 0}
@@ -1109,7 +1110,7 @@ GameObject:
   - component: {fileID: 327614264}
   - component: {fileID: 327614263}
   - component: {fileID: 327614262}
-  m_Layer: 31
+  m_Layer: 13
   m_Name: Bottom View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1182,7 @@ GameObject:
   - component: {fileID: 362931236}
   - component: {fileID: 362931235}
   - component: {fileID: 362931234}
-  m_Layer: 31
+  m_Layer: 13
   m_Name: Top View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1252,7 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376867845}
   - component: {fileID: 376867844}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: Top Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1268,7 +1269,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1287,14 +1288,14 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3489661239
+    m_Bits: 2415927040
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 59ae989ee17e94740b12c4311ba27a0d, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 0
   m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1322,7 +1323,7 @@ GameObject:
   - component: {fileID: 379920969}
   - component: {fileID: 379920968}
   - component: {fileID: 379920967}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slice2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1416,7 @@ GameObject:
   - component: {fileID: 432837977}
   - component: {fileID: 432837976}
   m_Layer: 28
-  m_Name: TOP UI
+  m_Name: Top UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1576,7 +1577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: Bottom Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,7 +1593,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1611,14 +1612,14 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3758096695
+    m_Bits: 2684362496
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 53110c9894ab86d4b8be995b37c4e282, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 0
   m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1868,8 +1869,8 @@ MonoBehaviour:
   TopRight: {fileID: 1505396959}
   BottomLeft: {fileID: 1938570009}
   BottomRight: {fileID: 1337278198}
-  FlipSpeed: 9
-  ReturnSpeed: 12
+  FlipSpeed: 12
+  ReturnSpeed: 15
   MaxRotation: 54
   IsPlayerOne: 0
 --- !u!1 &649492363
@@ -1883,7 +1884,7 @@ GameObject:
   - component: {fileID: 649492365}
   - component: {fileID: 649492367}
   - component: {fileID: 649492366}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Bottom Goal
   m_TagString: Goal
   m_Icon: {fileID: 0}
@@ -1940,6 +1941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthSlider: {fileID: 186615379}
+  BallDamageScript: {fileID: 2088018338}
 --- !u!50 &649492367
 Rigidbody2D:
   serializedVersion: 4
@@ -2231,7 +2233,7 @@ GameObject:
   - component: {fileID: 1016691793}
   - component: {fileID: 1016691792}
   - component: {fileID: 1016691791}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slice2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2356,7 +2358,7 @@ GameObject:
   - component: {fileID: 1188143567}
   - component: {fileID: 1188143570}
   - component: {fileID: 1188143571}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slice1 (1)
   m_TagString: Bumper
   m_Icon: {fileID: 0}
@@ -2514,7 +2516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1250386760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2715,7 +2717,7 @@ GameObject:
   - component: {fileID: 1337278195}
   - component: {fileID: 1337278197}
   - component: {fileID: 1337278198}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bottom Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2885,7 +2887,7 @@ GameObject:
   - component: {fileID: 1380144235}
   - component: {fileID: 1380144238}
   - component: {fileID: 1380144239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slice1 (4)
   m_TagString: Bumper
   m_Icon: {fileID: 0}
@@ -3036,7 +3038,7 @@ GameObject:
   - component: {fileID: 1397632476}
   - component: {fileID: 1397632479}
   - component: {fileID: 1397632480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slice1 (2)
   m_TagString: Bumper
   m_Icon: {fileID: 0}
@@ -3280,7 +3282,7 @@ GameObject:
   - component: {fileID: 1475641819}
   - component: {fileID: 1475641818}
   - component: {fileID: 1475641820}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slice2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3457,7 +3459,7 @@ GameObject:
   - component: {fileID: 1505396956}
   - component: {fileID: 1505396958}
   - component: {fileID: 1505396959}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Top Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3668,7 +3670,7 @@ GameObject:
   - component: {fileID: 1593411608}
   - component: {fileID: 1593411607}
   - component: {fileID: 1593411606}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slice2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3879,7 +3881,7 @@ GameObject:
   - component: {fileID: 1727670629}
   - component: {fileID: 1727670628}
   - component: {fileID: 1727670627}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: slice2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4166,7 +4168,7 @@ GameObject:
   - component: {fileID: 1872198631}
   - component: {fileID: 1872198633}
   - component: {fileID: 1872198634}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Top Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4499,7 +4501,7 @@ GameObject:
   - component: {fileID: 1938570006}
   - component: {fileID: 1938570008}
   - component: {fileID: 1938570009}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bottom Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4636,7 +4638,7 @@ GameObject:
   - component: {fileID: 2004601012}
   - component: {fileID: 2004601014}
   - component: {fileID: 2004601015}
-  m_Layer: 31
+  m_Layer: 11
   m_Name: Arena
   m_TagString: Arena Wall
   m_Icon: {fileID: 0}
@@ -5101,7 +5103,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.6862745, g: 0.8980393, b: 0.48627454, a: 1}
       key1: {r: 0, g: 0, b: 0, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
