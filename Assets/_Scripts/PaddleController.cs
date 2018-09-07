@@ -11,7 +11,8 @@ public class PaddleController : MonoBehaviour {
     private float TopLeftStartRot, TopRightStartRot, BottomLeftStartRot, BottomRightStartRot;
     public bool IsPlayerOne;
 
-    bool TopLeftActive = false, TopRightActive = false, BottomLeftActive = false, BottomRightActive = false;
+    [HideInInspector]
+    public bool TopLeftActive = false, TopRightActive = false, BottomLeftActive = false, BottomRightActive = false;
 
     private void OnEnable()
     {
@@ -65,10 +66,10 @@ public class PaddleController : MonoBehaviour {
 
     private void Update()
     {
-        BottomLeftActive = Input.GetKey(KeyCode.A);
-        BottomRightActive = Input.GetKey(KeyCode.D);
-        TopLeftActive = Input.GetKey(KeyCode.RightArrow);
-        TopRightActive = Input.GetKey(KeyCode.LeftArrow);
+        // BottomLeftActive = Input.GetKey(KeyCode.A);
+        // BottomRightActive = Input.GetKey(KeyCode.D);
+        // TopLeftActive = Input.GetKey(KeyCode.RightArrow);
+        // TopRightActive = Input.GetKey(KeyCode.LeftArrow);
     }
 
 

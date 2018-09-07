@@ -15,24 +15,20 @@ public class Respawn : MonoBehaviour {
 		startTrailTime = trail.time;
 	}
 
-	private void OnTriggerEnter2D(Collider2D col){
-		if(col.CompareTag("Goal")){
-			body.velocity = Vector2.zero;
-			body.isKinematic = true;
-			trail.emitting = false;
-			trail.time = 0;
-			trail.Clear();
-			body.MovePosition(StartPosition);
-			// Debug.Log(trail.positionCount);
-			// Debug.Log("Respawned");
-		}
-	}
+    public void OnGoalEnter()
+    {
+        body.velocity = Vector2.zero;
+        body.isKinematic = true;
+        trail.emitting = false;
+        trail.time = 0;
+        trail.Clear();
+        body.MovePosition(StartPosition);
+    }
 
-	private void OnTriggerExit2D(Collider2D col){
-		if(col.CompareTag("Goal")){
-			StartCoroutine("ResetTrail", startTrailTime + 0.05);
-		}
-	}
+    public void OnGoalExit()
+    {
+        StartCoroutine("ResetTrail", startTrailTime + 0.05);
+    }
 
 	IEnumerator ResetTrail(float t){
 		yield return new WaitForSecondsRealtime(t);
