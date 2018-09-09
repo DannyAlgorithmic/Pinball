@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AudioScript : MonoBehaviour {
 
-	public AudioClip PlaceholderClip;
-	public string CollisionTag = "";
+	public AudioClip BumperClip, PaddleClip, WallClip, ScoreClip;
 
 	private AudioSource SoundSource;
 
@@ -14,8 +13,18 @@ public class AudioScript : MonoBehaviour {
 	}
 	
 	private void OnCollisionEnter2D(Collision2D col){
-		if(col.gameObject.CompareTag(CollisionTag) == true)
-			SoundSource.PlayOneShot(PlaceholderClip);
-	}
+		if(col.gameObject.CompareTag("Bumper") == true)
+			SoundSource.PlayOneShot(BumperClip);
+        if (col.gameObject.CompareTag("Paddle") == true)
+            SoundSource.PlayOneShot(PaddleClip);
+        if (col.gameObject.CompareTag("Arena Wall") == true)
+            SoundSource.PlayOneShot(WallClip);
+    }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Goal") == true)
+            SoundSource.PlayOneShot(ScoreClip);
+    }
 }

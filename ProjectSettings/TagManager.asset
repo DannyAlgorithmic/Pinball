@@ -9,6 +9,8 @@ TagManager:
   - Arena Wall
   - Ball
   - Goal
+  - Paddle
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Paddle
   - View Texture
   - Goal
-  - 
+  - Pickup
   - 
   - 
   - 
