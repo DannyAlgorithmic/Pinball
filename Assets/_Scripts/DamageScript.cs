@@ -54,7 +54,7 @@ public class DamageScript : MonoBehaviour {
         bounceCount = 0;
     }
 
-    public void TakeDamage(Slider _slider)
+    public void UpdateDamageText(Slider _slider)
     {
         _slider.value -= damage;
         // Debug.Log("Took " + damage + "pts of damage!");

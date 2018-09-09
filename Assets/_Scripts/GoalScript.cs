@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class GoalScript : MonoBehaviour {
 
+    public PlayerEnum Player;
+
     public Slider HealthSlider;
     public DamageScript BallDamageScript;
+    public Canvas ResultsCanvas;
+    public Text ResultsText;
     private Respawn BallRespawn;
 
     private void OnEnable()
@@ -14,11 +18,25 @@ public class GoalScript : MonoBehaviour {
         BallRespawn = BallDamageScript.gameObject.GetComponent<Respawn>();
     }
 
+
+    private void CheckForDeath(float health)
+    {
+        if (health <= 0)
+        {
+            ResultsCanvas.enabled = true;
+            ResultsText.text = Player.ToString() + " WON THE MATCH!";
+            Time.timeScale = 0;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            BallDamageScript.TakeDamage(HealthSlider);
+            BallDamageScript.UpdateDamageText(HealthSlider);
+
+            CheckForDeath(HealthSlider.value);
+
             BallDamageScript.ResetModifiers();
             BallDamageScript.UpdateDamageUI();
 
