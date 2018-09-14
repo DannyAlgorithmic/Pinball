@@ -22,7 +22,7 @@ public class Respawn : MonoBehaviour {
         trail.emitting = false;
         trail.time = 0;
         trail.Clear();
-        body.MovePosition(StartPosition);
+        body.position = StartPosition;
     }
 
     public void OnGoalExit()
