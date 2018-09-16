@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public PaddleScript LeftPaddleController, RightPaddleController;
-
-
-
     private void Awake()
     {
         if (Time.timeScale != 1)

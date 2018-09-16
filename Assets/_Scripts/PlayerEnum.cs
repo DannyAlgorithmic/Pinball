@@ -1,3 +1,3 @@
 ﻿public enum PlayerEnum {
-    PLAYER_ONE, PLAYER_TWO, AI
+    PLAYER_ONE, PLAYER_TWO, BOTH, AI
 }

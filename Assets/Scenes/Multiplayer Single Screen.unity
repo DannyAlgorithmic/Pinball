@@ -377,7 +377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &43243575
 Rigidbody2D:
   serializedVersion: 4
@@ -500,8 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc94fe25de936e549a8fb9213705cac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftPaddleController: {fileID: 1157597217}
-  RightPaddleController: {fileID: 1313751925}
 --- !u!4 &44859333
 Transform:
   m_ObjectHideFlags: 0
@@ -1075,7 +1073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &139155743
 Rigidbody2D:
   serializedVersion: 4
@@ -3505,7 +3503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &929412236
 Rigidbody2D:
   serializedVersion: 4
@@ -4330,9 +4328,9 @@ MonoBehaviour:
   RightPaddleKey: 100
   IsAIControlled: 1
   isTouchControlled: 0
-  MaxRotation: 56
-  ShotSpeed: 16
-  ReleaseSpeed: 12
+  MaxRotation: 55
+  ShotSpeed: 19
+  ReleaseSpeed: 14
   MinReactionTime: 0.03
   MaxReactionTime: 0.07
   leftActive: 0
@@ -5199,9 +5197,9 @@ MonoBehaviour:
   LeftPaddleKey: 276
   RightPaddleKey: 275
   IsAIControlled: 0
-  isTouchControlled: 0
-  MaxRotation: 56
-  ShotSpeed: 16
+  isTouchControlled: 1
+  MaxRotation: 55
+  ShotSpeed: 19
   ReleaseSpeed: 14
   MinReactionTime: 0.03
   MaxReactionTime: 0.07
@@ -5995,7 +5993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1549881412
 Rigidbody2D:
   serializedVersion: 4
